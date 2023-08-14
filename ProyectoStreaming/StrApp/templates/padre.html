@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>StrApp</title>
+</head>
+<body>
+<nav>
+    <ul>
+        <li><a href="{% url 'peliculas' %}">Agregar Película</a></li>
+        <li><a href="{% url 'series' %}">Agregar Serie</a></li>
+        <li><a href="{% url 'plataformas' %}">Agregar Plataforma</a></li>
+        <li><a href="{% url 'buscar' %}">Buscar Película</a></li>
+    </ul>
+</nav>
+<div>
+    {% block content %}
+    {% endblock %}
+</div>
+</body>
+</html>

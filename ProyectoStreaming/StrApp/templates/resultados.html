@@ -1,0 +1,10 @@
+{% extends 'padre.html' %}
+
+{% block content %}
+<h2>Resultados de la búsqueda</h2>
+<ul>
+    {% for pelicula in peliculas %}
+    <li>{{ pelicula.titulo }} - {{ pelicula.genero }} - {{ pelicula.director }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
